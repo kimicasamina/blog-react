@@ -1,0 +1,35 @@
+@import '../../scss/variables';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue;
+    box-shadow: -2px 9px 20px -7px $blue;
+
+    .nav-items {
+        display: flex;
+        gap: 2.1875rem;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            color: $light;
+            &:hover {
+                &:before {
+                    content: '';
+                    width: 30px;
+                    height: 4px;
+                    background-color: $red;
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .branding {
+        color: $red;
+        font-size: $heading;
+    }
+}

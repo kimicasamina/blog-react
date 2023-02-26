@@ -1,0 +1,60 @@
+@import '../../scss/variables';
+
+.createblog {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 1.25rem;
+    }
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__control{
+            margin-bottom: .4375rem;
+            width: 100%;
+        }
+
+        label {
+            font-size: 1.125rem;
+            display: block;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: .625rem;
+            border-radius: 4px;
+            outline: none;
+            box-shadow: none;
+            border: solid 2px $blue;
+        }
+
+        .form__body {
+            height: 150px;
+        }
+
+        
+        .form__author {
+            padding: .625rem;
+            width: 100%;
+            max-width: 150px;
+        }
+
+        .submit-btn {
+            background-color: $red;
+            color: $light;
+            border: solid 2px $red;
+            &:hover {
+                background-color: $light;
+                color: $red;
+                border: solid 2px $red;
+            }
+        }
+    }
+}

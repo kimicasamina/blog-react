@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.bloglist {
+    padding-top: 1.875rem;
+
+    h1 {
+        // color: $red;
+        padding-bottom: .625rem;
+    }
+
+    .blog-content {
+        padding: 20px 0;
+        margin-bottom: .9375rem;
+
+        .title, .author {
+            color: $blue;
+        }
+
+        .author {
+            font-size: .875rem;
+            color: $red;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import 'variables';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: solid 1px lime;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+  
+}
+
+.btn {
+    padding: .625rem 1.875rem;
+    border-radius: 4px;
+    border: solid 2px $blue;
+    color: $blue;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 1.25rem 3.75rem;
+}
+
+body {
+    font-family: $Poppins;
+    font-size: $body;
+}
+
+.title {
+    color: $blue;
+    // margin-bottom: .625rem;
+    font-size: $heading;
+}
+
+.author {
+    color: $red;
+}
+
+.body {
+    color: $dark;
+}
